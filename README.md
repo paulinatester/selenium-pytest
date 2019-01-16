@@ -6,11 +6,12 @@ This project demonstrates a simple Selenium test script written in Python that c
 
 1. **Installing:**
 
-   ```bash
-  pip install -r requirements.txt
- ```
+```bash
+pip install -r requirements.txt
+```
+ 
 2. **Testing:**
 
-   ```bash
+```bash
 python -m pytest
- ```
+```
