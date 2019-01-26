@@ -1,11 +1,14 @@
+import time
+
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-import time
+from selenium.webdriver.chrome.service import Service
+
 
 def test_google_search():
-    driver = webdriver.Chrome(executable_path='path/to/chromedriver')
-
+    service = Service('/home/p/Desktop/repositories/chromedriver-linux64/geckodriver')
+    driver = webdriver.Firefox(service=service)
     # Open Google
     driver.get("https://www.google.com")
 
