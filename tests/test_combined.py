@@ -9,7 +9,7 @@ from selenium.webdriver.chrome.service import Service
 def test_google_search():
     service = Service('/home/p/Desktop/repositories/chromedriver-linux64/geckodriver')
     driver = webdriver.Firefox(service=service)
-    # Open Google
+ 
     driver.get("https://www.google.com")
 
     # Find the search input element by name attribute value
@@ -17,14 +17,11 @@ def test_google_search():
 
     # Type a search query
     search_box.send_keys("OpenAI")
-
-    # Submit the form
     search_box.send_keys(Keys.RETURN)
 
     # Wait for a while to observe the browser
-    time.sleep(5)
+    time.sleep(3)
 
-    # Close the browser
     driver.quit()
 
 @pytest.mark.selenium
