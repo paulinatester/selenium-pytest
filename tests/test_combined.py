@@ -12,15 +12,14 @@ def test_google_search():
  
     driver.get("https://www.google.com")
 
-    # Find the search input element by name attribute value
-    search_box = driver.find_element("name", "q")
+    search_box = driver.find_element("name", "q") # Find the search input element by name attribute value
 
     # Type a search query
     search_box.send_keys("OpenAI")
     search_box.send_keys(Keys.RETURN)
 
     # Wait for a while to observe the browser
-    time.sleep(3)
+    time.sleep(4)
 
     driver.quit()
 
